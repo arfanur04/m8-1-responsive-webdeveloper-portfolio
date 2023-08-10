@@ -223,20 +223,46 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
+	.header {
+		background-image: none;
+	}
+
+	.banner .profile-pic {
+		width: 100%;
+	}
+
+	nav,
+	nav > ul,
+	.banner,
+	.about-info-container,
 	.skills-container,
 	.resume-container,
 	footer {
 		flex-direction: column;
 	}
+
+	nav > ul {
+		gap: 10px;
+	}
+
+	.banner,
 	#what-i-do-description {
 		padding: 20px;
 	}
+
+	.about,
 	footer {
 		padding: 10px;
 	}
+
+	.btn-primary {
+		margin-bottom: 20px;
+	}
+
 	.footer-column {
 		width: 100%;
 	}
+
 	.contact input[type="text"],
 	.contact input[type="email"],
 	textarea {
@@ -247,5 +273,9 @@ textarea {
 @media screen and (min-width: 576px) and (max-width: 960px) {
 	footer {
 		padding: 10px;
+	}
+
+	.btn-primary {
+		margin-bottom: 15px;
 	}
 }
